@@ -1,0 +1,51 @@
+{
+  "name": "klocki",
+  "version": "0.1.0-alpha.0",
+  "description": "monorepo for reusable components styled with Theme UI",
+  "license": "MIT",
+  "private": true,
+  "scripts": {
+    "lerna:bootstrap": "lerna bootstrap",
+    "lerna:changed": "lerna changed",
+    "lerna:diff": "lerna diff",
+    "test": "lerna run jest --coverage",
+    "build": "tsc -b",
+    "build:cjs": "lerna run build:cjs",
+    "fix": "rome check --apply",
+    "rome:review": "rome check --review",
+    "changeset": "changeset",
+    "changeset:version": "changeset version",
+    "changeset:publish": "changeset publish",
+    "changeset:pre:enter": "changeset pre enter",
+    "changeset:pre:exit": "changeset pre exit",
+    "prepublishOnly": "yarn build && yarn build:cjs",
+    "release": "yarn prepublishOnly && yarn changeset publish"
+  },
+  "workspaces": [
+    "packages/*"
+  ],
+  "dependencies": {
+    "@changesets/cli": "^2.10.2",
+    "@jest/types": "^26.3.0",
+    "@types/jest": "^26.0.10",
+    "commitizen": "^4.2.1",
+    "cz-lerna-changelog": "^2.0.3",
+    "jest": "^26.4.2",
+    "lerna": "^3.22.1",
+    "rome": "^10.0.4-beta"
+  },
+  "config": {
+    "commitizen": {
+      "path": "./node_modules/cz-lerna-changelog"
+    }
+  },
+  "preconstruct": {
+    "packages": [
+      "packages/*"
+    ]
+  },
+  "devDependencies": {
+    "@types/react": "^16.9.49",
+    "react": "^16.13.1"
+  }
+}

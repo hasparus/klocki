@@ -1,0 +1,14 @@
+{
+	"compilerOptions": {
+		"strict": true,
+		"moduleResolution": "node",
+		"esModuleInterop": true,
+		"incremental": true,
+		"assumeChangesOnlyAffectDirectDependencies": true,
+		"importHelpers": true,
+		"declaration": true,
+		"composite": true,
+		"target": "es2018",
+		"module": "es2015"
+	}
+}

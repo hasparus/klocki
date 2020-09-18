@@ -1,0 +1,19 @@
+{
+  "name": "@klocki/dialog",
+  "version": "0.1.0-alpha.0",
+  "main": "dist/cjs/index.js",
+  "module": "dist/esm/index.js",
+  "publishConfig": {
+    "access": "public"
+  },
+  "scripts": {
+    "pretest": "tsc -b",
+    "test": "jest",
+    "build:cjs": "tsc -b tsconfig.cjs.json",
+    "build": "tsc -b"
+  },
+  "dependencies": {},
+  "peerDependencies": {
+    "react": "> 16"
+  }
+}

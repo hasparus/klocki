@@ -1,0 +1,6 @@
+{
+  "files.associations": {
+    "*.rjson": "yaml"
+  },
+  "prettier.enable": false
+}

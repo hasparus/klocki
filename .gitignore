@@ -1,0 +1,12 @@
+.env
+
+**/node_modules
+**/dist
+**/tsconfig.tsbuildinfo
+
+**/yarn-error.log
+# https://classic.yarnpkg.com/blog/2016/11/24/lockfiles-for-all/
+# !**/yarn.lock
+
+# yarn.lock is committed
+**/package-lock.json
