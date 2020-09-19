@@ -1,9 +1,11 @@
 {
   "name": "@klocki/hooks",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "main": "dist/cjs/index.js",
   "module": "dist/esm/index.js",
-  "publishConfig": { "access": "public" },
+  "publishConfig": {
+    "access": "public"
+  },
   "scripts": {
     "pretest": "tsc -b",
     "test": "jest",
